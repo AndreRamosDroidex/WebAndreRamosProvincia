@@ -1,0 +1,529 @@
+[
+    {
+        "type": "container",
+        "id": "0667e5ff0f",
+        "title": "Falix Ford Settings",
+        "description": "<h2><strong>Thank you for choosing <a target=\"_blank\" href=\"https:\/\/www.themevault.net\/falix-ford-web-developer-portfolio-wordpress-theme\">Falix Ford<\/a> WordPress theme from <a target=\"_blank\" href=\"https:\/\/www.themevault.net\">ThemeVault<\/a>. You can visit <a target=\"_blank\" href=\"https:\/\/demo.themevault.net\/?src=falix-ford-documentation&goback=falix-ford-web-developer-portfolio-wordpress-theme\">this link<\/a> for documentation.<\/strong><h2>",
+        "locations": [
+            {
+                "type": "Options",
+                "page": {
+                    "id": "falix-ford-settings",
+                    "title": "Falix Ford Settings"
+                }
+            }
+        ],
+        "fields": [
+            {
+                "name": "general",
+                "label": "General",
+                "type": "Tab",
+                "tab_icon": "dashicons-admin-generic"
+            },
+            {
+                "name": "background_image",
+                "label": "Background Image",
+                "type": "Image",
+                "description": "Background Profile Image",
+                "allowed_filetype": "image",
+                "file_output_type": "url",
+                "image_output_type": "url",
+                "image_size": "large"
+            },
+            {
+                "name": "your_full_name",
+                "label": "Your Full Name",
+                "type": "Text",
+                "default_value": "Falix Ford"
+            },
+            {
+                "name": "social_accounts",
+                "label": "Social Accounts",
+                "type": "Complex",
+                "complex_fields_source": "manual",
+                "complex_fields": [
+                    {
+                        "name": "facebook",
+                        "label": "Facebook",
+                        "type": "Text"
+                    },
+                    {
+                        "name": "twitter",
+                        "label": "Twitter",
+                        "type": "Text"
+                    },
+                    {
+                        "name": "linkedin",
+                        "label": "Linkedin",
+                        "type": "Text"
+                    },
+                    {
+                        "name": "dribble",
+                        "label": "Dribble",
+                        "type": "Text"
+                    }
+                ],
+                "complex_save_mode": "merge",
+                "complex_prefix": "social"
+            },
+            {
+                "name": "typer_texts",
+                "label": "Typer Texts",
+                "type": "Repeater",
+                "repeater_maximum": 5,
+                "repeater_add_text": "Add Typer Text",
+                "repeater_background_color": "#ffffff",
+                "repeater_groups": [
+                    {
+                        "type": "typer_text",
+                        "title": "Typer Text",
+                        "style": "auto",
+                        "fields": [
+                            {
+                                "name": "text",
+                                "label": "Text",
+                                "type": "Text",
+                                "hide_label": true
+                            }
+                        ],
+                        "maximum": 10,
+                        "border_color": "#dddddd"
+                    }
+                ]
+            },
+            {
+                "name": "about_page",
+                "label": "About Page",
+                "type": "Tab",
+                "tab_icon": "dashicons-admin-users"
+            },
+            {
+                "name": "about_page_title",
+                "label": "Page Title",
+                "type": "Text",
+                "default_value": "About"
+            },
+            {
+                "name": "about_sub_title",
+                "label": "About Sub Title",
+                "type": "Text",
+                "default_value": "WHo AM i"
+            },
+            {
+                "name": "about_text",
+                "label": "About Text",
+                "type": "WYSIWYG",
+                "default_value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in sem eget elit maximus commodo. Fusce ligula ex, dapibus eget iaculis ut, mollis nec mi. Fusce rutrum erat eu consectetur aliquam. Pellentesque elementum odio mi, in placerat neque tempus sed. Fusce pellentesque eros ac lobortis sodales.\n\nVitae blandit elit rutrum eu. Sed semper elit eget placerat condimentum.\n\nSed iaculis dignissim est tempor sagittis. Praesent a rhoncus mauris, sed ultricies urna. Nullam blandit risus erat. Fusce ut ante facilisis dolor dictum aliquet.",
+                "rows": 10,
+                "apply_wpautop": true
+            },
+            {
+                "name": "personal_information",
+                "label": "Personal Information",
+                "type": "Complex",
+                "complex_fields_source": "manual",
+                "complex_fields": [
+                    {
+                        "name": "full_name",
+                        "label": "Full Name",
+                        "type": "Text",
+                        "default_value": "Falix Ford",
+                        "field_width": 50
+                    },
+                    {
+                        "name": "address",
+                        "label": "Address",
+                        "type": "Text",
+                        "default_value": "1134 House, Small Street",
+                        "field_width": 50
+                    },
+                    {
+                        "name": "phone",
+                        "label": "Phone",
+                        "type": "Text",
+                        "default_value": "+ 123 456 789 456",
+                        "field_width": 50
+                    },
+                    {
+                        "name": "email",
+                        "label": "Email",
+                        "type": "Text",
+                        "default_value": "demo@demo.com",
+                        "field_width": 50
+                    },
+                    {
+                        "name": "date_of_birth",
+                        "label": "Date of birth",
+                        "type": "Date",
+                        "default_value": "May 2, 1986",
+                        "field_width": 50
+                    },
+                    {
+                        "name": "skype",
+                        "label": "Skype",
+                        "type": "Text",
+                        "default_value": "demo.skype",
+                        "field_width": 50
+                    },
+                    {
+                        "name": "interest",
+                        "label": "Interest",
+                        "type": "Text",
+                        "default_value": "freelance, full-time"
+                    }
+                ],
+                "complex_save_mode": "merge",
+                "complex_prefix": "personal_info_"
+            },
+            {
+                "name": "resume_file",
+                "label": "Resume File",
+                "type": "File"
+            },
+            {
+                "name": "hire_me_link",
+                "label": "Hire Me Link",
+                "type": "Text"
+            },
+            {
+                "name": "expertise_section",
+                "label": "Expertise Section",
+                "type": "Section",
+                "section_icon": "dashicons-welcome-learn-more",
+                "section_color": "red"
+            },
+            {
+                "name": "expertise_title",
+                "label": "Expertise Title",
+                "type": "Text",
+                "default_value": "Expertise"
+            },
+            {
+                "name": "expertise_sub_title",
+                "label": "Expertise sub title",
+                "type": "Text",
+                "default_value": "What I can bring to table"
+            },
+            {
+                "name": "expertise_items",
+                "label": "Expertise Items",
+                "type": "Repeater",
+                "repeater_maximum": 10,
+                "repeater_add_text": "Add Expertise",
+                "repeater_background_color": "#fff",
+                "repeater_groups": [
+                    {
+                        "type": "expertise_item",
+                        "title": "Expertise Item",
+                        "style": "auto",
+                        "fields": [
+                            {
+                                "name": "expertise_icon",
+                                "label": "Icon",
+                                "type": "Icon",
+                                "field_width": 50,
+                                "icon_sets": [
+                                    "font-awesome",
+                                    "dashicons",
+                                    "themify"
+                                ]
+                            },
+                            {
+                                "name": "expertise_title",
+                                "label": "Title",
+                                "type": "Text",
+                                "field_width": 50
+                            },
+                            {
+                                "name": "expertise_description",
+                                "label": "Description",
+                                "type": "Textarea",
+                                "rows": 3
+                            }
+                        ],
+                        "maximum": 10,
+                        "border_color": "#dddddd"
+                    }
+                ]
+            },
+            {
+                "name": "experience_section",
+                "label": "Experience Section",
+                "type": "Section",
+                "section_icon": "dashicons-editor-expand",
+                "section_color": "red"
+            },
+            {
+                "name": "experience_title",
+                "label": "Experience Title",
+                "type": "Text",
+                "default_value": "Experiences"
+            },
+            {
+                "name": "experience_sub_title",
+                "label": "Experience Sub Title",
+                "type": "Text",
+                "default_value": "What I love to do"
+            },
+            {
+                "name": "experiences_items",
+                "label": "Experiences Items",
+                "type": "Repeater",
+                "repeater_maximum": 5,
+                "repeater_add_text": "Add Experience",
+                "repeater_background_color": "#fff",
+                "repeater_groups": [
+                    {
+                        "type": "experience_item",
+                        "title": "Experience Item",
+                        "style": "auto",
+                        "fields": [
+                            {
+                                "name": "experience_year",
+                                "label": "Year",
+                                "type": "Text",
+                                "field_width": 50
+                            },
+                            {
+                                "name": "experience_title",
+                                "label": "Title",
+                                "type": "Text",
+                                "field_width": 50
+                            },
+                            {
+                                "name": "experience_description",
+                                "label": "Description",
+                                "type": "Textarea",
+                                "rows": 3
+                            }
+                        ],
+                        "maximum": 5,
+                        "border_color": "#dddddd"
+                    }
+                ]
+            },
+            {
+                "name": "testimonials_section",
+                "label": "Testimonials Section",
+                "type": "Section",
+                "section_icon": "dashicons-testimonial",
+                "section_color": "red"
+            },
+            {
+                "name": "testionials_title",
+                "label": "Testionials Title",
+                "type": "Text",
+                "default_value": "Testimonials"
+            },
+            {
+                "name": "testimonials_sub_title",
+                "label": "Testimonials Sub Title",
+                "type": "Text",
+                "default_value": "What clients say about me"
+            },
+            {
+                "name": "testimonials_items",
+                "label": "Testimonials Items",
+                "type": "Repeater",
+                "repeater_maximum": 6,
+                "repeater_add_text": "Add Testimonial",
+                "repeater_background_color": "#fff",
+                "repeater_groups": [
+                    {
+                        "type": "testimonai_item",
+                        "title": "Testimonai Item",
+                        "style": "auto",
+                        "fields": [
+                            {
+                                "name": "testimonial_text",
+                                "label": "Testimonial Text",
+                                "type": "Textarea",
+                                "rows": 3
+                            },
+                            {
+                                "name": "client_name",
+                                "label": "Client Name",
+                                "type": "Text"
+                            },
+                            {
+                                "name": "client_post",
+                                "label": "Client Post",
+                                "type": "Text"
+                            }
+                        ],
+                        "maximum": 6,
+                        "border_color": "#dddddd"
+                    }
+                ]
+            },
+            {
+                "name": "portfolio",
+                "label": "Portfolio",
+                "type": "Tab",
+                "tab_icon": "dashicons-format-image"
+            },
+            {
+                "name": "portfolio_page_title",
+                "label": "Portfolio Page Title",
+                "type": "Text",
+                "default_value": "Portfolio"
+            },
+            {
+                "name": "portfolio_sub_title",
+                "label": "Portfolio Sub Title",
+                "type": "Text",
+                "default_value": "MY work"
+            },
+            {
+                "name": "portfolio_items",
+                "label": "Portfolio Items",
+                "type": "Repeater",
+                "repeater_maximum": 50,
+                "repeater_add_text": "Add Portfolio",
+                "repeater_background_color": "#fff",
+                "repeater_groups": [
+                    {
+                        "type": "portfolio_item",
+                        "title": "Portfolio Item",
+                        "style": "auto",
+                        "fields": [
+                            {
+                                "name": "portfolio_name",
+                                "label": "Portfolio Name",
+                                "type": "Text",
+                                "default_value": "Lorem Ipsum"
+                            },
+                            {
+                                "name": "portfolio_title",
+                                "label": "Portfolio Title",
+                                "type": "Textarea",
+                                "description": "Portfolio short description",
+                                "rows": 3
+                            },
+                            {
+                                "name": "portfolio_client",
+                                "label": "Client",
+                                "type": "Text",
+                                "field_width": 50
+                            },
+                            {
+                                "name": "portfolio_date",
+                                "label": "Date created",
+                                "type": "Date",
+                                "field_width": 50
+                            },
+                            {
+                                "name": "portfolio_skills",
+                                "label": "Skills",
+                                "type": "Text",
+                                "description": "Add skills with comma seperated"
+                            },
+                            {
+                                "name": "portfolio_category",
+                                "label": "Portfolio Category",
+                                "type": "Text"
+                            },
+                            {
+                                "name": "portfolio_image",
+                                "label": "Portfolio Image",
+                                "type": "Image",
+                                "field_width": 50,
+                                "allowed_filetype": "image",
+                                "file_output_type": "url",
+                                "image_output_type": "url",
+                                "image_size": "thumbnail"
+                            },
+                            {
+                                "name": "portfolio_gallary",
+                                "label": "Portfolio gallary",
+                                "type": "Gallery",
+                                "field_width": 50,
+                                "allowed_filetype": "image",
+                                "file_output_type": ""
+                            },
+                            {
+                                "name": "portfolio_description",
+                                "label": "Description",
+                                "type": "WYSIWYG",
+                                "rows": 10
+                            }
+                        ],
+                        "maximum": 50,
+                        "border_color": "#dddddd"
+                    }
+                ]
+            },
+            {
+                "name": "blog",
+                "label": "Blog",
+                "type": "Tab",
+                "tab_icon": "dashicons-welcome-write-blog"
+            },
+            {
+                "name": "blog_page_title",
+                "label": "Blog Page Title",
+                "type": "Text",
+                "default_value": "Blog"
+            },
+            {
+                "name": "blog_page_sub_title",
+                "label": "Blog Page Sub Title",
+                "type": "Text",
+                "default_value": "What's happening"
+            },
+            {
+                "name": "contact",
+                "label": "Contact",
+                "type": "Tab",
+                "tab_icon": "dashicons-phone"
+            },
+            {
+                "name": "contact_page_title",
+                "label": "Contact Page Title",
+                "type": "Text",
+                "default_value": "Contact Us"
+            },
+            {
+                "name": "contact_sub_title",
+                "label": "Contact Sub Title",
+                "type": "Text",
+                "default_value": "Get In Touch"
+            },
+            {
+                "name": "contact_page_content",
+                "label": "Contact page content",
+                "type": "WYSIWYG",
+                "rows": 10,
+                "apply_wpautop": true
+            },
+            {
+                "name": "contact_address",
+                "label": "Address",
+                "type": "Text",
+                "default_value": "701 Old York Drive Richmond USA. "
+            },
+            {
+                "name": "contact_phone",
+                "label": "Phone",
+                "type": "Text",
+                "default_value": "+1-202-555-0100"
+            },
+            {
+                "name": "contact_email",
+                "label": "Email",
+                "type": "Text",
+                "default_value": "demo@info.com"
+            },
+            {
+                "name": "contact_form_shortcode",
+                "label": "Contact Form Shortcode",
+                "type": "WYSIWYG",
+                "description": "Please copy and paste any contact form 7 shortcode in above field.",
+                "rows": 10,
+                "apply_wpautop": true
+            }
+        ],
+        "hash": "0667e5ff0f",
+        "modified": 1590141313
+    }
+]

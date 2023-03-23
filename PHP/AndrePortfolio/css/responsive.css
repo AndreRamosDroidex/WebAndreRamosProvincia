@@ -1,0 +1,114 @@
+/*
+Template Name: Falix Ford
+File Name: responsive.css
+Author Name: ThemeVault
+Author URI: http://www.themevault.net/
+License URI: http://www.themevault.net/license/
+*/
+
+/* Landscape phones and smaller */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .contact-block {
+        left: 365px;
+        top: 500px;
+        transform: rotate(-34deg);
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .intro-block, .about-block, .portfolio-block, .blog-block, .contact-block {
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-top-colors: none;
+        border-color: -moz-use-text-color -moz-use-text-color rgba(255, 255, 255, 0.5);
+        border-image: none;
+        border-style: none none solid;
+        border-width: medium medium 1px;
+        display: table;
+        height: auto;
+        left: 0;
+        position: relative;
+        top: 0;
+        transform: rotate(0deg);
+        width: 100%;
+    }
+    .intro-block-container, .about-block-container, .portfolio-block-container, .blog-block-container, .contact-block-container {
+        padding: 0;
+        transform: rotate(0deg);
+    }
+    .contact-block {
+        background: transparent;
+    }
+    .intro-block {
+        background: transparent;
+        padding-bottom: 25px;
+        padding-top: 15px;
+    }
+    .tv-home.tv-bg-img {
+        background-position: top !important;
+    }
+    .content-blocks, .tv-top-fix-menu {
+        left: 0;
+        width: 100%;
+    }
+    .content {
+        padding:  120px 50px 50px;
+    }
+    .content-blocks.popup.showx {
+        left: 0;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .tv-home {
+        position: relative;
+        overflow-y: scroll;
+    }
+    .content {
+        padding: 100px 20px 50px;
+    }
+    .tv-offspace-small-bottom-20 {
+        margin-bottom: 20px;
+    }
+    .portfolio-filter label {
+        display: none;
+    }
+    .intro-block {
+        padding-top: 30px;
+    }
+    .intro-block-container h1, .intro-block-container h2 {
+        font-size: 34px;
+        line-height: 1.15;
+    }
+    .intro-block-container h1 {
+        margin-bottom: 10px;
+    }
+    #typer h2 {
+        font-size: 26px;
+        margin-top: 10px;
+    }
+    .tv-social {
+        margin-top: 0;
+    }
+    h2.menu-item {
+        font-size: 22px;
+        margin: 10px 20px 40px;
+    }
+    .contact-block {
+        border: none;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .inline-menu {
+        margin-right: 15px;
+    }
+    .inline-menu li {
+        padding: 0 5px;
+        letter-spacing: 0.5px;
+    }
+    .portfolio-filter button {
+        margin-left: 0;
+        padding: 2px 5px;
+    }
+}
